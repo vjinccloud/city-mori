@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>冠輝永萃｜家，永和印象</title>
+  <meta name="description" content="上傳一張照片、留下一句話，把你的「永和的家」萃出來。投稿・投票・抽獎，活動期間 2026/11/01-2027/01/31。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Sans+TC:wght@400;600;700&family=Noto+Serif+TC:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Nav -->
+  <header class="nav" id="top">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#top" aria-label="冠輝永萃 CITY MORI">
+        <img src="assets/logo.svg" width="165" height="87" alt="冠輝永萃 CITY MORI">
+      </a>
+      <nav class="nav__menu" aria-label="主選單">
+        <a href="#intro">活動介紹</a>
+        <a href="#submit">投稿</a>
+        <a href="#project">建案介紹</a>
+        <a href="#news">最新消息</a>
+        <a href="#vote">作品投票</a>
+        <a href="#lottery">名單抽獎</a>
+      </nav>
+      <a class="btn btn--primary nav__cta" href="#submit-form">上傳我家照片</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <img class="hero__img" src="assets/hero.png" width="1640" height="624" alt="冠輝永萃 CITY MORI｜與生俱來的優雅　四號公園．捷運永安市場站　12-28坪 1-3房">
+      <div class="hero__float">
+        <button class="hero__book" type="button" data-modal-open="modal-booking">
+          <img src="assets/icon-mark.svg" width="38" height="42" alt="">
+          <span>預約賞屋</span>
+        </button>
+        <a class="hero__qr" href="https://line.me/R/ti/p/@060mwiae" target="_blank" rel="noopener" aria-label="加入「萃，永和的家」LINE 官方帳號">
+          <img src="assets/line-qr.png" width="110" height="110" alt="LINE 官方帳號 QR Code">
+        </a>
+      </div>
+    </section>
+
+    <!-- Intro｜活動介紹 -->
+    <section class="section intro" id="intro">
+      <div class="container">
+        <div class="intro__top">
+          <div class="intro__heading">
+            <p class="eyebrow">活動介紹</p>
+            <h2 class="h2">三步驟，把「我家」萃出來</h2>
+            <p class="lead">不侷限於人物，家的日常、家的角落、街角的風景、陪伴你的毛小孩、巷口的早餐——任何跟「永和的家」有關的回憶與印象，都歡迎投稿。</p>
+          </div>
+          <dl class="facts">
+            <div class="facts__row"><dt>活動主題</dt><dd>家，永和印象</dd></div>
+            <div class="facts__row"><dt>活動期間</dt><dd>2026/11/01-2027/01/31</dd></div>
+            <div class="facts__row"><dt>參加方式</dt><dd>投稿・投票・抽獎，<span class="nb">每組 Email 限投稿一次</span></dd></div>
+          </dl>
+        </div>
+        <ol class="steps">
+          <li class="card step">
+            <span class="step__num">01</span>
+            <h3 class="h3">上傳照片與一句話</h3>
+            <p>選一張屬於你的永和印象，寫下一句話，完成投稿。</p>
+          </li>
+          <li class="card step">
+            <span class="step__num">02</span>
+            <h3 class="h3">邀親友替你投票</h3>
+            <p>分享作品頁面，邀請親友每天替你投一票。</p>
+          </li>
+          <li class="card step">
+            <span class="step__num">03</span>
+            <h3 class="h3">留下名單抽獎</h3>
+            <p>投票後留下資料，即可取得抽獎序號參加抽獎。</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Submit｜投稿徵集 -->
+    <section class="section submit" id="submit">
+      <div class="container submit__grid">
+        <div class="submit__left">
+          <p class="eyebrow">投稿徵集</p>
+          <h2 class="h2">主題：家，永和印象</h2>
+          <p class="lead">上傳一張照片、留下一句話，就完成投稿；每組 Email 限投稿一次。</p>
+          <ul class="bullets">
+            <li>主題不限於人物，風景、寵物、美食、家的角落都可以。</li>
+            <li>每組 Email 帳號限投稿一次，重複投稿以最後一次為準。</li>
+            <li>投稿即視為同意本活動「影像授權同意書」及「活動參加及投票規範」。</li>
+          </ul>
+          <div class="chips">
+            <span class="chips__label">投稿分類：</span>
+            <button type="button" class="chip" data-pick-category="家的日常">家的日常</button>
+            <button type="button" class="chip" data-pick-category="家的角落">家的角落</button>
+            <button type="button" class="chip" data-pick-category="永和風景">永和風景</button>
+            <button type="button" class="chip" data-pick-category="吃喝玩樂">吃喝玩樂</button>
+            <button type="button" class="chip" data-pick-category="家人與毛小孩">家人與毛小孩</button>
+            <button type="button" class="chip" data-pick-category="老家記憶">老家記憶</button>
+          </div>
+          <div class="card license" id="license">
+            <h3 class="h3">影像授權同意書</h3>
+            <ol class="license__list">
+              <li>1. 本人同意將所投稿之照片授權予主辦單位及其委託之行銷、設計單位，用於網站、社群及宣傳物使用。</li>
+              <li>2. 本影像之著作人格權仍歸本人所有；主辦單位使用時將標示投稿者姓名或暱稱。</li>
+              <li>3. 本人保證所投稿之影像為本人拍攝或持有合法使用權，且非 AI 生成影像；如涉及他人肖像，已取得當事人同意。</li>
+              <li>4. 本授權為非專屬、無償、不限地域及次數。</li>
+              <li>5. 活動結束後，本人得以書面通知主辦單位撤回尚未使用之影像。</li>
+            </ol>
+          </div>
+        </div>
+
+        <form class="form-card" id="submit-form" novalidate>
+          <h3 class="h3">上傳你的「家，永和印象」</h3>
+          <div class="field">
+            <label for="sf-email">Email（每組帳號限投稿一次）</label>
+            <input class="input" id="sf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="sf-name">暱稱或稱謂</label>
+            <input class="input" id="sf-name" name="nickname" type="text" placeholder="投稿時顯示的名稱" required>
+          </div>
+          <div class="field">
+            <label for="sf-category">投稿分類</label>
+            <div class="select">
+              <select class="input" id="sf-category" name="category">
+                <option>家的日常</option>
+                <option>家的角落</option>
+                <option>永和風景</option>
+                <option>吃喝玩樂</option>
+                <option>家人與毛小孩</option>
+                <option>老家記憶</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="sf-photo">上傳照片</label>
+            <label class="dropzone" id="dropzone" for="sf-photo">
+              <input id="sf-photo" name="photo" type="file" accept="image/jpeg,image/png" required>
+              <span class="dropzone__hint">拖曳或選擇一張照片上傳<br>（單張，建議 10MB 以內，須為實拍照片）</span>
+              <span class="dropzone__preview" hidden>
+                <img alt="">
+                <span class="dropzone__name"></span>
+              </span>
+            </label>
+          </div>
+          <div class="field">
+            <label for="sf-caption">這張照片的一句話</label>
+            <input class="input input--mint" id="sf-caption" name="caption" type="text" maxlength="40" placeholder="例：巷口那家豆漿，是我每天早上的家。" required>
+          </div>
+          <label class="check">
+            <input type="checkbox" name="agree" required>
+            <span>我已閱讀並同意「<a href="#license">影像授權同意書</a>」、「<a href="#rules">活動參加及投票規範</a>」、「<a href="#intro">活動說明</a>」及「<a href="#prizes">抽獎辦法</a>」（抽獎時間／抽獎形式／公布日期）等注意事項。</span>
+          </label>
+          <p class="form-msg" role="alert" hidden></p>
+          <button class="btn btn--primary btn--block" type="submit">送出投稿</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Project｜建案介紹 -->
+    <section class="section project" id="project">
+      <div class="container">
+        <div class="project__head">
+          <div class="project__heading">
+            <p class="eyebrow">建案介紹</p>
+            <h2 class="h2">冠輝永萃，<span class="nb">住進永和的生活</span></h2>
+            <p class="lead">坐擁永和正核心・精緻高坪效1～3房<br>步行捷運永安市場、頂溪站、四號公園，繁華中享綠意</p>
+            <button class="btn btn--brown btn--lg" type="button" data-modal-open="modal-booking">預約賞屋</button>
+          </div>
+          <dl class="card info">
+            <div class="info__row"><dt>基地位置</dt><dd>永和路一段45號</dd></div>
+            <div class="info__row"><dt>產品類型</dt><dd>精緻高坪效 1～3房</dd></div>
+            <div class="info__row"><dt>接待會館</dt><dd>新北市永和區永和路一段163號<br>貴賓專線 <a href="tel:0288888888">(02)8888-8888</a></dd></div>
+          </dl>
+        </div>
+
+        <div class="project__body">
+          <figure class="map" aria-label="冠輝永萃生活機能示意圖">
+            <img class="map__base" src="assets/map-mobile.svg" width="335" height="272" alt="冠輝永萃生活機能示意圖">
+            <!-- 桌機版才顯示的地圖標註（位置以 690×560 設計稿換算成百分比） -->
+            <div class="map__labels" aria-hidden="true">
+              <span class="map__road" style="left:47.8%;top:9.8%">永和路一段</span>
+              <span class="map__road" style="left:16.2%;top:23%">永平路</span>
+              <span class="map__road" style="left:13.3%;top:15.2%">中山路一段</span>
+              <span class="map__road" style="left:78.3%;top:28.8%">福和路</span>
+              <span class="map__road" style="left:89.3%;top:24.8%">竹林路</span>
+              <span class="map__road" style="left:82%;top:75.2%">秀朗路一段</span>
+              <span class="map__road" style="left:86.7%;top:67.3%">國中路</span>
+              <span class="map__road" style="left:15.7%;top:82.7%">中和路</span>
+
+              <span class="pin pin--transit" style="left:3.2%;top:2.9%">↑ 往台北市區<em>捷運至古亭站約 5 分（不含步行）</em></span>
+              <span class="pin pin--transit" style="left:9.8%;top:46.1%">公車／永和路口<em>步行 1 分</em></span>
+              <span class="pin pin--transit" style="left:2.3%;top:66.4%">捷運永安市場站<em>步行 5 分</em></span>
+              <span class="pin pin--life" style="left:23.7%;top:54.3%">永安市場<em>步行 3 分</em></span>
+              <span class="pin pin--life" style="left:49.4%;top:33.6%">全聯永和福和店<em>步行 4 分</em></span>
+              <span class="pin pin--life" style="left:37.5%;top:20%">樂華夜市商圈<em>步行 5 分</em></span>
+              <span class="pin pin--leisure" style="left:4.3%;top:32.1%">比漾廣場<em>步行 10 分</em></span>
+              <span class="pin pin--edu" style="left:62.3%;top:62.7%">永和國小<em>步行 9 分</em></span>
+              <span class="pin pin--edu" style="left:54.1%;top:52.1%">福和國中<em>步行 14 分．車程約 5 分</em></span>
+              <span class="pin pin--edu" style="left:71%;top:43.6%">永和國中<em>車程約 5 分</em></span>
+              <span class="pin pin--leisure" style="left:27.5%;top:83.2%">四號公園<em>步行 6 分</em></span>
+            </div>
+          </figure>
+
+          <div class="amenities">
+            <div class="amenity">
+              <h3 class="amenity__title">交通</h3>
+              <p>[捷運永安市場站]　步行 5 分</p>
+              <p>[公車／永和路口]　步行 1 分</p>
+              <p>[台北市區]　搭捷運到古亭站約 5 分（不含步行）</p>
+            </div>
+            <div class="amenity">
+              <h3 class="amenity__title">生活</h3>
+              <p>[樂華夜市商圈]　步行 5 分</p>
+              <p>[永安市場]　步行 3 分</p>
+              <p>[全聯永和福和店]　步行 4 分</p>
+            </div>
+            <div class="amenity">
+              <h3 class="amenity__title">教育</h3>
+              <p>[永和國小]　步行 9 分</p>
+              <p>[福和國中]　步行 14 分，車程約 5 分</p>
+              <p>[永和國中]　車程約 5 分</p>
+            </div>
+            <div class="amenity">
+              <h3 class="amenity__title">休閒</h3>
+              <p>[四號公園]　步行 6 分</p>
+              <p>[比漾廣場]　步行 10 分</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News｜活動消息 -->
+    <section class="section news" id="news">
+      <div class="container">
+        <p class="eyebrow">最新活動</p>
+        <h2 class="h2">活動消息</h2>
+        <div class="news__items">
+          <article class="news__item">
+            <time datetime="2026-11-01">2026/11/01</time>
+            <h3>活動開跑：上傳你的「我家」照片</h3>
+            <p>投稿即日起開放，上傳照片與一句話就能參加。</p>
+          </article>
+          <article class="news__item">
+            <time datetime="2026-01-31">2026/01/31</time>
+            <h3>票選截止時間</h3>
+            <p>票選截止後公布得獎名單，並以 LINE 通知得獎者。</p>
+          </article>
+          <article class="news__item">
+            <time datetime="2026-02-28">2026/02/28</time>
+            <h3>抽獎名單公布</h3>
+            <p>2026/02/28 公布得獎名單，並以 LINE 通知得獎者。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vote｜作品投票 -->
+    <section class="section vote" id="vote">
+      <div class="container">
+        <p class="eyebrow">作品投票</p>
+        <h2 class="h2">替他們投一票</h2>
+        <p class="lead lead--wide">每位訪客每天可對同一件作品投一票，票數即時更新。下方為版面示意，正式上線後將替換為投稿作品。</p>
+
+        <div class="filters" role="group" aria-label="作品分類篩選">
+          <button type="button" class="chip chip--filter is-active" data-filter="all" aria-pressed="true">全部</button>
+          <button type="button" class="chip chip--filter" data-filter="永和風景" aria-pressed="false">永和風景</button>
+          <button type="button" class="chip chip--filter" data-filter="家人與毛小孩" aria-pressed="false">家人與毛小孩</button>
+          <button type="button" class="chip chip--filter" data-filter="吃喝玩樂" aria-pressed="false">吃喝玩樂</button>
+          <button type="button" class="chip chip--filter" data-filter="家的角落" aria-pressed="false">家的角落</button>
+        </div>
+
+        <div class="vote__body">
+          <div class="works" id="works">
+            <article class="work" data-id="w1" data-category="永和風景">
+              <div class="work__photo">
+                <img src="assets/illust-scenery.svg" alt="示意插圖：風景" loading="lazy">
+                <span class="tag tag--demo">示意圖</span><span class="tag tag--cat">風景</span>
+              </div>
+              <p class="work__caption">傍晚的中正橋，是我回家前最喜歡的風景。</p>
+              <div class="work__footer">
+                <strong class="work__votes"><span data-votes>128</span> 票</strong>
+                <button type="button" class="btn btn--bronze btn--sm" data-vote>投他一票</button>
+              </div>
+            </article>
+            <article class="work" data-id="w2" data-category="家人與毛小孩">
+              <div class="work__photo">
+                <img src="assets/illust-pet.svg" alt="示意插圖：寵物" loading="lazy">
+                <span class="tag tag--demo">示意圖</span><span class="tag tag--cat">寵物</span>
+              </div>
+              <p class="work__caption">一個人加一隻貓，就是我的全家福。</p>
+              <div class="work__footer">
+                <strong class="work__votes"><span data-votes>96</span> 票</strong>
+                <button type="button" class="btn btn--bronze btn--sm" data-vote>投他一票</button>
+              </div>
+            </article>
+            <article class="work" data-id="w3" data-category="吃喝玩樂">
+              <div class="work__photo">
+                <img src="assets/illust-food.svg" alt="示意插圖：美食" loading="lazy">
+                <span class="tag tag--demo">示意圖</span><span class="tag tag--cat">美食</span>
+              </div>
+              <p class="work__caption">巷口那碗豆漿配燒餅，是永和早晨的味道。</p>
+              <div class="work__footer">
+                <strong class="work__votes"><span data-votes>142</span> 票</strong>
+                <button type="button" class="btn btn--bronze btn--sm" data-vote>投他一票</button>
+              </div>
+            </article>
+            <article class="work" data-id="w4" data-category="家的角落">
+              <div class="work__photo">
+                <img src="assets/illust-corner.svg" alt="示意插圖：角落" loading="lazy">
+                <span class="tag tag--demo">示意圖</span><span class="tag tag--cat">角落</span>
+              </div>
+              <p class="work__caption">老家的窗，每天都被陽光照得暖暖的。</p>
+              <div class="work__footer">
+                <strong class="work__votes"><span data-votes>74</span> 票</strong>
+                <button type="button" class="btn btn--bronze btn--sm" data-vote>投他一票</button>
+              </div>
+            </article>
+            <article class="work" data-id="w5" data-category="吃喝玩樂">
+              <div class="work__photo">
+                <img src="assets/illust-food.svg" alt="示意插圖：美食" loading="lazy">
+                <span class="tag tag--demo">示意圖</span><span class="tag tag--cat">美食</span>
+              </div>
+              <p class="work__caption">週末的樂華夜市，全家人一起散步覓食。</p>
+              <div class="work__footer">
+                <strong class="work__votes"><span data-votes>58</span> 票</strong>
+                <button type="button" class="btn btn--bronze btn--sm" data-vote>投他一票</button>
+              </div>
+            </article>
+            <article class="work" data-id="w6" data-category="永和風景">
+              <div class="work__photo">
+                <img src="assets/illust-scenery.svg" alt="示意插圖：風景" loading="lazy">
+                <span class="tag tag--demo">示意圖</span><span class="tag tag--cat">風景</span>
+              </div>
+              <p class="work__caption">河濱公園的早晨，跑步時看見整片天空。</p>
+              <div class="work__footer">
+                <strong class="work__votes"><span data-votes>81</span> 票</strong>
+                <button type="button" class="btn btn--bronze btn--sm" data-vote>投他一票</button>
+              </div>
+            </article>
+            <p class="works__empty" hidden>這個分類目前還沒有作品。</p>
+          </div>
+
+          <aside class="rank" aria-labelledby="rank-title">
+            <h3 class="h3 rank__title" id="rank-title">人氣排行榜</h3>
+            <p class="small">人氣票數將與評審評分綜合計算，詳見「活動參加及投票規範」。</p>
+            <ol class="rank__list">
+              <li class="rank__item"><span class="rank__no">1</span><span class="rank__thumb"><img src="assets/illust-food.svg" alt="" loading="lazy"></span><span class="rank__meta"><span class="small">[投稿者]</span><strong>142 票</strong></span></li>
+              <li class="rank__item"><span class="rank__no">2</span><span class="rank__thumb"><img src="assets/illust-scenery.svg" alt="" loading="lazy"></span><span class="rank__meta"><span class="small">[投稿者]</span><strong>128 票</strong></span></li>
+              <li class="rank__item"><span class="rank__no">3</span><span class="rank__thumb"><img src="assets/illust-pet.svg" alt="" loading="lazy"></span><span class="rank__meta"><span class="small">[投稿者]</span><strong>96 票</strong></span></li>
+              <li class="rank__item"><span class="rank__no">4</span><span class="rank__thumb"><img src="assets/illust-pet.svg" alt="" loading="lazy"></span><span class="rank__meta"><span class="small">[投稿者]</span><strong>90 票</strong></span></li>
+              <li class="rank__item"><span class="rank__no">5</span><span class="rank__thumb"><img src="assets/illust-pet.svg" alt="" loading="lazy"></span><span class="rank__meta"><span class="small">[投稿者]</span><strong>56 票</strong></span></li>
+              <li class="rank__item"><span class="rank__no">6</span><span class="rank__thumb"><img src="assets/illust-pet.svg" alt="" loading="lazy"></span><span class="rank__meta"><span class="small">[投稿者]</span><strong>26 票</strong></span></li>
+            </ol>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lottery｜名單抽獎 -->
+    <section class="lottery" id="lottery">
+      <img class="lottery__animal lottery__animal--bird-l" src="assets/animal-bird-left.png" alt="" loading="lazy">
+      <img class="lottery__animal lottery__animal--bird-r" src="assets/animal-bird-right.png" alt="" loading="lazy">
+      <img class="lottery__animal lottery__animal--owl" src="assets/animal-owl.png" alt="" loading="lazy">
+      <img class="lottery__animal lottery__animal--deer" src="assets/animal-deer.png" alt="" loading="lazy">
+      <div class="lottery__content">
+        <p class="eyebrow">名單抽獎</p>
+        <h2 class="h2 lottery__title">投票完成，<br>加入好友查看得獎名單！</h2>
+        <a class="lottery__qr" href="https://line.me/R/ti/p/@060mwiae" target="_blank" rel="noopener" aria-label="加入「萃，永和的家」LINE 官方帳號">
+          <img src="assets/line-qr.png" width="350" height="350" alt="「萃，永和的家」LINE 官方帳號 QR Code" loading="lazy">
+        </a>
+        <p class="lottery__note">手機掃描加入「萃，永和的家」<br>LINE 官方帳號，投票並留下名單</p>
+      </div>
+    </section>
+
+    <!-- Prizes｜獎項與領獎說明 -->
+    <section class="section prizes" id="prizes">
+      <div class="container">
+        <p class="eyebrow">獎項說明</p>
+        <h2 class="h2">投稿獎金與抽獎</h2>
+        <p class="lead">獎項規模為建議方案，正式辦法依主辦單位確認為準。</p>
+
+        <div class="prize-row prize-row--4">
+          <div class="prize prize--first">
+            <p class="prize__label">首獎</p>
+            <p class="prize__value">NT$10,000</p>
+            <p class="small">人氣票選</p>
+          </div>
+          <div class="prize">
+            <p class="prize__label">貳獎</p>
+            <p class="prize__value">NT$5,000</p>
+            <p class="small">人氣票選</p>
+          </div>
+          <div class="prize">
+            <p class="prize__label">參獎</p>
+            <p class="prize__value">NT$2,000</p>
+            <p class="small">人氣票選</p>
+          </div>
+          <div class="prize">
+            <p class="prize__label">佳作</p>
+            <p class="prize__value">3 名 各 <span class="nb">NT$1,000</span></p>
+            <p class="small">感謝每一位用心投稿的朋友</p>
+          </div>
+        </div>
+        <div class="prize-row prize-row--2">
+          <div class="prize prize--light">
+            <p class="prize__label">投票抽獎</p>
+            <p class="prize__value">100 元超商券</p>
+            <p class="small">投票並留下名單者，抽出 50 名</p>
+          </div>
+          <div class="prize prize--light">
+            <p class="prize__label">在地大獎</p>
+            <p class="prize__value">NT$20,000 消費金</p>
+            <p class="small">永和在地店家消費金，錢流回在地</p>
+          </div>
+        </div>
+
+        <h2 class="h2 tax__title">領獎與稅務說明</h2>
+        <div class="tax">
+          <div class="tax__item">
+            <h3 class="prize__label">01 所得申報</h3>
+            <ol>
+              <li>本活動的競賽獎金及抽獎獎品（包含現金、超商券及消費金），屬於《所得稅法》第 14 條第 1 項第八類「競技、競賽及機會中獎之獎金或給與」。非現金獎品依面額計算價值。</li>
+              <li>得獎者全年在本活動獲得的獎項價值合計超過 NT$1,000 時，主辦單位會依法開立扣繳憑單或免扣繳憑單，並向稅捐稽徵機關申報。得獎者報稅時需列入個人年度綜合所得。</li>
+              <li>免扣繳或免列單申報，不代表這筆所得免稅。</li>
+            </ol>
+          </div>
+          <div class="tax__item">
+            <h3 class="prize__label">02 扣繳規定</h3>
+            <ol>
+              <li>中華民國境內居住者：依給付全額扣繳 10%。每次應扣繳稅額不超過 NT$2,000 時免扣繳，也就是單次獎項價值不超過 NT$20,000 免扣繳。</li>
+              <li>非中華民國境內居住者：依給付全額扣繳 20%，不適用上述免扣繳門檻。</li>
+              <li>居住者身分依《所得稅法》認定，不以國籍判斷。</li>
+              <li>獎品是超商券、消費金等非現金獎項時，應扣繳的稅額需由得獎者先繳給主辦單位，才能領取獎項。</li>
+              <li>以上依給付時有效的法令辦理。</li>
+            </ol>
+          </div>
+          <div class="tax__item">
+            <h3 class="prize__label">03 稅務資料用途</h3>
+            <ol>
+              <li>為辦理扣繳及所得申報，得獎者需提供真實姓名、身分證統一編號（外籍人士為居留證號碼或護照號碼）及戶籍地址，並簽署領據。外籍人士另需提供居留證或護照影本。</li>
+              <li>上述資料只會用於本活動的領獎及稅務申報作業。</li>
+              <li>資料不實，或未在通知後 [7] 天內提供者，視同放棄得獎資格。</li>
+            </ol>
+          </div>
+          <div class="tax__item">
+            <h3 class="prize__label">04 個資告知與權利</h3>
+            <ol>
+              <li>蒐集者：[冠輝永萃]</li>
+              <li>蒐集目的：活動聯繫、領獎作業及依法辦理稅務申報。</li>
+              <li>資料類別：姓名、聯絡電話、Email、身分證統一編號（或居留證、護照號碼）、戶籍地址。</li>
+              <li>利用期間：活動期間起，至法令規定的保存期限屆滿為止。</li>
+              <li>利用地區、對象與方式：在中華民國境內，由主辦單位及依法有權機關（如稅捐稽徵機關），以書面或電子方式利用。</li>
+              <li>當事人權利：參加者可以依《個人資料保護法》第 3 條，請求查詢、閱覽、製給複製本、補充或更正、停止蒐集處理利用及刪除個人資料。依法必須保存的資料，仍依相關法令辦理。</li>
+              <li>權利行使管道：[聯絡 Email／電話]</li>
+              <li>參加者可以自行決定是否提供資料。不提供的話，將無法完成領獎。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rules｜活動參加及投票規範 -->
+    <section class="section rules" id="rules">
+      <div class="container">
+        <p class="eyebrow eyebrow--bronze">活動規範</p>
+        <h2 class="h2 h2--brown">活動參加及投票規範</h2>
+        <p class="lead lead--wide lead--ink2">為維護活動公平性、避免爭議，參加者於投稿、投票或登錄抽獎時，即視為已閱讀並同意以下規範。</p>
+
+        <div class="rules__grid">
+          <div class="rule">
+            <h3>01 參加資格</h3>
+            <p>1. 凡年滿 18 歲、具有效 Email 及台灣手機門號者皆可參加；未滿 18 歲者須經法定代理人同意。</p>
+            <p>2. 主辦單位、承辦單位及其員工與直系親屬不得參加評選及抽獎。</p>
+            <p>3. 參加者須提供真實、正確之資料，資料不實或無法聯繫者視同放棄得獎資格。</p>
+          </div>
+          <div class="rule">
+            <h3>02 投稿規範</h3>
+            <p>1. 每組 Email 限投稿一件，重複投稿以最後一次為準。</p>
+            <p>2. 作品須為本人拍攝之實拍照片，不得使用 AI 生成、合成或盜用他人影像。</p>
+            <p>3. 作品不得含有違法、猥褻、暴力、歧視、商業廣告或侵害他人權益之內容。</p>
+            <p>4. 照片中如有可辨識之他人肖像，須事先取得當事人同意。</p>
+            <p>5. 作品經審核通過後始公開於投票區，主辦單位有權刪除不符規範之作品。</p>
+          </div>
+          <div class="rule">
+            <h3>03 投票規範</h3>
+            <p>1. 每位訪客每日可對同一件作品投一票，每日 00:00 重新計算。</p>
+            <p>2. 作品規格：[JPG／PNG，單張不超過 50MB]。</p>
+            <p>3. 嚴禁使用程式、機器人、大量申請帳號、購買票數或其他不正當方式灌票。</p>
+            <p>4. 經系統偵測或查證有異常灌票情形，主辦單位得逕行扣除異常票數，情節重大者取消參賽及得獎資格。</p>
+            <p>5. 票數以系統後台紀錄為準，網頁顯示僅供參考。</p>
+          </div>
+          <div class="rule">
+            <h3>04 評選方式</h3>
+            <p>1. 投票截止後，依有效票數由高到低排名，取前 6 名頒發獎項：</p>
+            <ul>
+              <li>首獎（第 1 名）：NT$10,000</li>
+              <li>貳獎（第 2 名）：NT$5,000</li>
+              <li>參獎（第 3 名）：NT$2,000</li>
+              <li>佳作（第 4–6 名）：各 NT$1,000</li>
+              <li>100 元超商券，共抽出 50 名。</li>
+            </ul>
+            <p>2. 如果票數相同，依「先達到該票數的作品」決定名次。</p>
+          </div>
+          <div class="rule">
+            <h3>05 抽獎與領獎</h3>
+            <p>1. 投票並完整留下名單者，每人活動期間可獲得一組抽獎序號，同一手機號碼限中獎一次。</p>
+            <p>2. 抽獎將於<strong> [2026/02/20] </strong>公開進行，全程錄影存證。</p>
+            <p>3. 評選結果經主辦單位確認後公布，得獎名單於<strong> [2026/02/28] </strong>公告於LINE 官方帳號，請加入LINE 官方帳號獲得更多資訊跟其他好禮。</p>
+            <p>4. 須於通知後<strong> [7] </strong>日內回覆領獎資料，逾期視同放棄。</p>
+            <p>5. 獎項不得要求更換、折現或轉讓。</p>
+            <p>6. 依中華民國稅法規定，獎項價值超過 NT$1,000 者將列入個人年度所得；達法定扣繳門檻者，須依法預扣稅額後領取。</p>
+          </div>
+          <div class="rule">
+            <h3>06 其他</h3>
+            <p>1. 個人資料僅用於本活動聯繫、領獎及參加者同意之用途，並依個人資料保護法妥善保管。</p>
+            <p>2. 如因不可抗力或系統異常致活動無法進行，主辦單位保留延期、修改或終止活動之權利。</p>
+            <p>3. 主辦單位保有修改活動辦法與獎項之權利，修改內容將公告於本網站，不另行通知。</p>
+            <p>4. 本活動如有爭議，以主辦單位之最終解釋為準；如有未盡事宜，依中華民國相關法令辦理。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <img class="footer__logo" src="assets/logo-white.svg" width="256" height="148" alt="冠輝永萃 CITY MORI">
+    <p class="footer__tagline"><span>萃，永和的家</span><span>一場永和人的共萃計畫</span></p>
+    <p>接待會館　新北市永和區永和路一段163號<br>貴賓專線　<a href="tel:0288888888">(02)8888-8888</a></p>
+  </footer>
+
+  <!-- Popup｜預約賞屋 -->
+  <div class="modal" id="modal-booking" role="dialog" aria-modal="true" aria-labelledby="booking-title" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog booking">
+      <div class="booking__head">
+        <div class="booking__top">
+          <p class="eyebrow">冠輝永萃 · CITY MORI</p>
+          <button class="modal__close" type="button" data-modal-close aria-label="關閉"><img src="assets/icon-close.svg" width="20" height="20" alt=""></button>
+        </div>
+        <div class="booking__title">
+          <h2 class="h2" id="booking-title">預約賞屋</h2>
+          <span class="h3 booking__sub">客戶資料表</span>
+        </div>
+        <p class="booking__desc">留下您的聯絡資料與購屋需求，讓我們更了解您對家的期待。</p>
+      </div>
+      <form class="booking__form" novalidate data-form="booking">
+        <div class="modal__view">
+          <h3 class="h3 booking__section">聯絡資料</h3>
+          <div class="field-row">
+            <div class="field">
+              <label for="bk-name">*貴賓姓名</label>
+              <input class="input input--52" id="bk-name" name="name" type="text" placeholder="例：王小姐" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="bk-phone">手機號碼</label>
+              <input class="input input--52" id="bk-phone" name="phone" type="tel" inputmode="numeric" placeholder="09xx-xxx-xxx" autocomplete="tel" pattern="09\d{2}-?\d{3}-?\d{3}">
+            </div>
+          </div>
+          <div class="field">
+            <label for="bk-area">*居住區域</label>
+            <div class="select">
+              <select class="input" id="bk-area" name="area" required>
+                <option>永和</option><option>中和</option><option>新店</option><option>板橋</option><option>台北市</option><option>新北市其他區</option><option>其他縣市</option>
+              </select>
+            </div>
+          </div>
+          <label class="check check--box">
+            <input type="checkbox" name="marketing">
+            <span>本人同意貴公司行銷同仁可依其聯繫方式，告知相關房地產市場及行銷訊息</span>
+          </label>
+          <hr class="booking__divider">
+          <p class="form-msg" role="alert" hidden></p>
+          <button class="btn btn--brown btn--block btn--52" type="submit">送出預約</button>
+        </div>
+        <div class="modal__done" hidden>
+          <h3 class="h3">預約已送出</h3>
+          <p>感謝您的預約，專人將儘快與您聯繫安排賞屋時間。</p>
+          <button class="btn btn--brown btn--block btn--52" type="button" data-modal-close>關閉</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Popup｜投票抽獎表單 -->
+  <div class="modal" id="modal-vote" role="dialog" aria-modal="true" aria-labelledby="vote-title" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <form class="modal__dialog voteform" novalidate data-form="vote">
+      <div class="voteform__top">
+        <h2 class="h3" id="vote-title">投票並參加抽獎</h2>
+        <button class="modal__close" type="button" data-modal-close aria-label="關閉"><img src="assets/icon-close.svg" width="20" height="20" alt=""></button>
+      </div>
+      <div class="modal__view">
+        <div class="field">
+          <label for="vt-name">*姓名或稱謂</label>
+          <input class="input" id="vt-name" name="name" type="text" placeholder="例：王小姐" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="vt-phone">*手機號碼</label>
+          <input class="input" id="vt-phone" name="phone" type="tel" inputmode="numeric" placeholder="09xx-xxx-xxx" autocomplete="tel" pattern="09\d{2}-?\d{3}-?\d{3}" required>
+        </div>
+        <div class="field">
+          <label for="vt-area">*居住區域</label>
+          <div class="select">
+            <select class="input" id="vt-area" name="area" required>
+              <option>永和</option><option>中和</option><option>新店</option><option>板橋</option><option>台北市</option><option>新北市其他區</option><option>其他縣市</option>
+            </select>
+          </div>
+        </div>
+        <fieldset class="field">
+          <legend>最近半年有在看房嗎？（選填）</legend>
+          <div class="radios">
+            <label class="radio"><input type="radio" name="househunting" value="有"><span>有</span></label>
+            <label class="radio"><input type="radio" name="househunting" value="沒有"><span>沒有</span></label>
+          </div>
+        </fieldset>
+        <label class="check">
+          <input type="checkbox" name="contact">
+          <span>同意由 [建商公司名稱] 與其委託單位，就本建案與後續建案與我聯繫。</span>
+        </label>
+        <label class="check check--13">
+          <input type="checkbox" name="agree" required>
+          <span>我已閱讀並同意「<a href="#license" data-modal-close>影像授權同意書</a>」、「<a href="#rules" data-modal-close>活動參加及投票規範</a>」、「<a href="#intro" data-modal-close>活動說明</a>」及「<a href="#prizes" data-modal-close>抽獎辦法</a>」（抽獎時間／抽獎形式／公布日期）等注意事項。</span>
+        </label>
+        <p class="form-msg" role="alert" hidden></p>
+        <button class="btn btn--primary btn--block" type="submit">送出並參加抽獎</button>
+      </div>
+      <div class="modal__done" hidden>
+        <p class="voteform__done-title">投票成功！</p>
+        <p>已為這件作品投下一票，並完成抽獎登錄。加入 LINE 官方帳號即可查看得獎名單。</p>
+        <a class="btn btn--primary btn--block" href="#lottery" data-modal-close>前往加入 LINE 好友</a>
+      </div>
+    </form>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
